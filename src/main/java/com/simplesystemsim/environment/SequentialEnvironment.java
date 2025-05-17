@@ -1,4 +1,4 @@
 package com.simplesystemsim.environment;
 
-public class GenerationalEnvironment {
+public class SequentialEnvironment {
 }
