@@ -8,8 +8,4 @@ import com.simplesystemsim.environment.Environment;
 public class GenerativeAgent extends AbstractAgent {
 
 
-    @Override
-    public AgentOutput enact(AgentInput input) {
-        return null;
-    }
 }
