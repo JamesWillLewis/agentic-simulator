@@ -1,3 +1,5 @@
+[![Build Status](https://github.com/JamesWillLewis/simple-system-sim/actions/workflows/gradle.yml/badge.svg)](https://github.com/JamesWillLewis/simple-system-sim/actions/workflows/gradle.yml)
+
 ### Overview
 
 This is an overview.
