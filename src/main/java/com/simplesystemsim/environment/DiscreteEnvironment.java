@@ -1,7 +1,7 @@
 package com.simplesystemsim.environment;
 
-import com.simplesystemsim.agent.Agent;
-import com.simplesystemsim.core.Ticker;
+import com.simplesystemsim.chronology.Generation;
+import com.simplesystemsim.chronology.Ticker;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -24,12 +24,8 @@ public abstract class DiscreteEnvironment implements Environment, Ticker {
     }
 
     @Override
-    public int tick() {
+    public int nextTick() {
         return 0;
     }
 
-    @Override
-    public void associate(Agent agent) {
-
-    }
 }

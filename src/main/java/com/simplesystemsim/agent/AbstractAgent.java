@@ -2,24 +2,25 @@ package com.simplesystemsim.agent;
 
 import com.simplesystemsim.environment.Environment;
 
+import java.util.Collection;
+
 /**
  *
  */
 public abstract class AbstractAgent implements Agent {
 
-
     @Override
-    public void attach(Environment environment) {
-        environment.associate(this);
+    public AgentOutput enact(Environment environment, AgentInput input) {
+        return null;
     }
 
     @Override
-    public void enact(Environment environment) {
-
+    public Collection<Agent> getRelations() {
+        return null;
     }
 
     @Override
-    public Relationship relate(Agent agent) {
+    public AgentState getState() {
         return null;
     }
 }

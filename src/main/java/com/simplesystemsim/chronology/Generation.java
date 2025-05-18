@@ -1,5 +1,10 @@
-package com.simplesystemsim.environment;
+package com.simplesystemsim.chronology;
 
+
+/**
+ * A generation represents a snapshot of states within a discrete environment.
+ * A generation is not synonymous with a tick -- one generation could span many ticks.
+ */
 public class Generation {
 
     private final int generationId;

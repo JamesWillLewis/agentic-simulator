@@ -1,6 +1,6 @@
 package com.simplesystemsim.example.circuit;
 
-import com.simplesystemsim.environment.SequentialEnvironment;
+import com.simplesystemsim.environment.DiscreteEnvironment;
 
-public class Circuit extends SequentialEnvironment {
+public class Circuit extends DiscreteEnvironment {
 }

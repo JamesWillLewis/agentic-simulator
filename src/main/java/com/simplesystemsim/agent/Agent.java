@@ -2,11 +2,13 @@ package com.simplesystemsim.agent;
 
 import com.simplesystemsim.environment.Environment;
 
+import java.util.Collection;
+
 public interface Agent {
 
-    void enact(final Environment environment);
+    AgentOutput enact(final Environment environment, final AgentInput input);
 
-    void attach(final Environment environment);
+    Collection<Agent> getRelations();
 
-    Relationship relate(Agent agent);
-}
+    AgentState getState();
+ }
