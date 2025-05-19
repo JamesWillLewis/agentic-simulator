@@ -1,6 +1,7 @@
 package com.simplesystemsim.agent;
 
-import com.simplesystemsim.environment.Environment;
+import com.simplesystemsim.connections.Connection;
+import com.simplesystemsim.environment.EnvironmentContext;
 
 import java.util.Collection;
 
@@ -10,12 +11,12 @@ import java.util.Collection;
 public abstract class AbstractAgent implements Agent {
 
     @Override
-    public AgentOutput enact(Environment environment, AgentInput input) {
+    public AgentOutput enact(EnvironmentContext context, AgentInput input) {
         return null;
     }
 
     @Override
-    public Collection<Agent> getRelations() {
+    public Collection<Connection> getConnections() {
         return null;
     }
 
