@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/JamesWillLewis/simple-system-sim/actions/workflows/gradle.yml/badge.svg)](https://github.com/JamesWillLewis/simple-system-sim/actions/workflows/gradle.yml)
+[![Gradle Build](https://github.com/JamesWillLewis/agentic-simulator/actions/workflows/gradle.yml/badge.svg)](https://github.com/JamesWillLewis/agentic-simulator/actions/workflows/gradle.yml)
 
 ### Overview
 
