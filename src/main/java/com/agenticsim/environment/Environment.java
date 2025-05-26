@@ -7,7 +7,7 @@ import java.time.Duration;
 
 public interface Environment<T extends Topology> {
 
-    void assemble(T topology);
+    T assembleTopology();
 
     /**
      * Runs the simulation indefinitely until {@link #stop()} is invoked.

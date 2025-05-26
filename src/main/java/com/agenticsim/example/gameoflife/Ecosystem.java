@@ -9,7 +9,7 @@ public class Ecosystem extends DiscreteTimeEnvironment<GridTopology> {
     }
 
     @Override
-    public void assemble(GridTopology topology) {
-
+    public GridTopology assembleTopology() {
+        return new GridTopology();
     }
 }

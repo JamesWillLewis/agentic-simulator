@@ -9,5 +9,4 @@ public interface Topology {
 
     void addAgent(Agent agent);
 
-
 }

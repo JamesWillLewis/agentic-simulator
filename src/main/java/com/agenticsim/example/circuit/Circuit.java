@@ -11,7 +11,8 @@ import java.util.function.Consumer;
 public class Circuit extends DiscreteTimeEnvironment<GraphTopology> {
 
     @Override
-    public void assemble(GraphTopology topology) {
+    public GraphTopology assembleTopology() {
+        final var topology = new GraphTopology();
 
         Input input = new Input();
         Output output = new Output();
@@ -19,6 +20,8 @@ public class Circuit extends DiscreteTimeEnvironment<GraphTopology> {
         topology.addAgent(input);
         topology.addAgent(output);
         topology.connect(input, output).withMessagePipe();
+
+        return topology;
     }
 
 }

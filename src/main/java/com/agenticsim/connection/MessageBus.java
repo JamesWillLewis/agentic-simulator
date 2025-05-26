@@ -4,6 +4,8 @@ import com.agenticsim.agent.Agent;
 import com.agenticsim.agent.AgentInput;
 import com.agenticsim.agent.AgentOutput;
 import com.agenticsim.agent.AgentState;
+import com.agenticsim.behavior.Behavior;
+import com.agenticsim.common.Id;
 import com.agenticsim.environment.EnvironmentContext;
 
 import java.util.Collection;
@@ -24,7 +26,17 @@ public class MessageBus implements Agent {
     }
 
     @Override
+    public Collection<Behavior> getBehaviors() {
+        return null;
+    }
+
+    @Override
     public AgentState getState() {
+        return null;
+    }
+
+    @Override
+    public Id getId() {
         return null;
     }
 }

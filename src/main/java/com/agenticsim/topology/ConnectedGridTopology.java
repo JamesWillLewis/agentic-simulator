@@ -1,6 +1,7 @@
 package com.agenticsim.topology;
 
 import com.agenticsim.agent.Agent;
+import com.agenticsim.connection.Connection;
 import com.agenticsim.connection.Connector;
 
 import java.util.List;
@@ -23,6 +24,11 @@ public class ConnectedGridTopology implements Topology, Connectable {
     @Override
     public Connector connect(Agent source, Agent dest) {
         return null;
+    }
+
+    @Override
+    public void addConnection(Connection connection) {
+
     }
 
     @Override

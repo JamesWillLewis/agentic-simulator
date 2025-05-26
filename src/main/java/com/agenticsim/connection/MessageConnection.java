@@ -3,8 +3,6 @@ package com.agenticsim.connection;
 import com.agenticsim.agent.Agent;
 import com.agenticsim.exception.DuplicateMessageException;
 
-import java.util.Optional;
-
 public abstract class MessageConnection extends AbstractConnection {
 
     private Message message;

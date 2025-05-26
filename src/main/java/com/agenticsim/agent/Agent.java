@@ -1,5 +1,8 @@
 package com.agenticsim.agent;
 
+import com.agenticsim.behavior.Behavior;
+import com.agenticsim.common.Id;
+import com.agenticsim.common.Identifiable;
 import com.agenticsim.connection.Connection;
 import com.agenticsim.environment.EnvironmentContext;
 
@@ -14,11 +17,17 @@ import java.util.Collection;
  *  </ol>
  *
  */
-public interface Agent {
+public interface Agent extends Identifiable {
 
     AgentOutput enact(final EnvironmentContext context, final AgentInput input);
 
     Collection<Connection> getConnections();
 
+    Collection<Behavior> getBehaviors();
+
     AgentState getState();
- }
+
+    @Override
+    Id getId();
+
+}

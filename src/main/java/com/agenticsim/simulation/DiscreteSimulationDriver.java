@@ -1,4 +1,4 @@
-package com.agenticsim.core;
+package com.agenticsim.simulation;
 
 public class DiscreteSimulationDriver {
 }

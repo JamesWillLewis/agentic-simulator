@@ -6,13 +6,14 @@ import com.agenticsim.chronology.Ticks;
 import com.agenticsim.topology.Topology;
 
 import java.time.Duration;
+import java.util.Arrays;
 
 /**
  * A discrete time environment enacts agents and transitions state across discrete units of times called "ticks".
  *
  * @see com.agenticsim.chronology.Tick
  */
-public abstract class DiscreteTimeEnvironment<T extends Topology> implements Environment<T>, Ticker {
+public abstract class DiscreteTimeEnvironment<T extends Topology> extends AbstractEnvironment<T> implements Ticker {
 
     private static final int DEFAULT_GENERATION_DEPTH = 1;
 
